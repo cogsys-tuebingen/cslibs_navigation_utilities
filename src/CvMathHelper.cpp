@@ -6,7 +6,7 @@
  */
 
 #include <iostream>
-#include <cslibs_utils/CvMathHelper.h>
+#include <cslibs_navigation_utilities/CvMathHelper.h>
 
 using namespace cv;
 using namespace std;

@@ -2,8 +2,8 @@
 #include <fstream>
 #include <iostream>
 #include <sstream>
-#include <cslibs_utils/Strings.h>
-#include <cslibs_utils/ConfigFileReader.h>
+#include <cslibs_navigation_utilities/Strings.h>
+#include <cslibs_navigation_utilities/ConfigFileReader.h>
 
 using namespace std;
 

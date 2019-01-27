@@ -5,8 +5,8 @@
  *      Author: dube
  */
 
-#include <cslibs_utils/RamaxxException.h>
-#include <cslibs_utils/CvContourManipulator.h>
+#include <cslibs_navigation_utilities/RamaxxException.h>
+#include <cslibs_navigation_utilities/CvContourManipulator.h>
 
 
 CvContourManipulator::CvContourManipulator()

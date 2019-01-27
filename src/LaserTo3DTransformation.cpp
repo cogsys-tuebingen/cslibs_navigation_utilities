@@ -5,7 +5,7 @@
  *      Author: Michael Kaulig
  */
 
-#include <cslibs_utils/LaserTo3DTransformation.h>
+#include <cslibs_navigation_utilities/LaserTo3DTransformation.h>
 #include <iostream>
 #include <tf/tf.h>
 

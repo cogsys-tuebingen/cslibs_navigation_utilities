@@ -12,8 +12,8 @@
 ///////////////////////////////////////////////////////////////////////////////
 
 // Project
-#include <cslibs_utils/MathHelper.h>
-#include <cslibs_utils/Line2dSegment.h>
+#include <cslibs_navigation_utilities/MathHelper.h>
+#include <cslibs_navigation_utilities/Line2dSegment.h>
 
 ///////////////////////////////////////////////////////////////////////////////
 // I M P L E M E N T A T I O N

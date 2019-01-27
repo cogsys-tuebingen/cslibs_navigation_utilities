@@ -2,7 +2,7 @@
 #include <cmath>
 #include <iostream>
 #include <limits>
-#include <cslibs_utils/MathHelper.h>
+#include <cslibs_navigation_utilities/MathHelper.h>
 #include <Eigen/Dense>
 
 // C/C++

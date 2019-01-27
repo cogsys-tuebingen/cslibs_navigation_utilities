@@ -5,7 +5,7 @@
  *      Author: dube
  */
 
-#include <cslibs_utils/RamaxxException.h>
+#include <cslibs_navigation_utilities/RamaxxException.h>
 
 using namespace std;
 

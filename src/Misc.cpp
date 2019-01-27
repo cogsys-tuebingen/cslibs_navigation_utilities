@@ -5,7 +5,7 @@
  *  @author bohlmann
  */
 
-#include <cslibs_utils/Misc.h>
+#include <cslibs_navigation_utilities/Misc.h>
 
 #include <wordexp.h>
 #include <fstream>

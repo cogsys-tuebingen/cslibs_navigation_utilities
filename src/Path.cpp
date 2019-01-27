@@ -11,8 +11,8 @@
 #include <sstream>
 #include <fstream>
 
-#include <cslibs_utils/Path.h>
-#include <cslibs_utils/RamaxxException.h>
+#include <cslibs_navigation_utilities/Path.h>
+#include <cslibs_navigation_utilities/RamaxxException.h>
 
 using namespace std;
 

@@ -8,7 +8,7 @@
 */ 
 #include <cstdio>
 
-#include <cslibs_utils/EggTimer.h>
+#include <cslibs_navigation_utilities/EggTimer.h>
 
 EggTimer::EggTimer()
   :duration_ms_(0),is_running(false)

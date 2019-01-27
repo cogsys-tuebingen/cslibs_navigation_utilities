@@ -7,7 +7,7 @@
 **************************************************************************/
 #include <math.h>
 #include <iostream>
-#include <cslibs_utils/CircleEstimator.h>
+#include <cslibs_navigation_utilities/CircleEstimator.h>
 
 using namespace Eigen;
 

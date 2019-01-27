@@ -8,7 +8,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include <cslibs_utils/Strings.h>
+#include <cslibs_navigation_utilities/Strings.h>
 
 #include <sstream>
 

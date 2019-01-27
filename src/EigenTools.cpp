@@ -5,7 +5,7 @@
  *      Author: Sebastian Scherer <sebastian.scherer@uni-tuebingen.de>
  */
 
-#include <cslibs_utils/EigenTools.h>
+#include <cslibs_navigation_utilities/EigenTools.h>
 
 Eigen::Matrix2d RotMat2d(double phi) {
     double s = sin(phi);

@@ -9,7 +9,7 @@
 #ifndef CIRCLEESTIMATOR_H
 #define CIRCLEESTIMATOR_H
 #include <list>
-#include <cslibs_utils/StatsEstimator.h>
+#include <cslibs_navigation_utilities/StatsEstimator.h>
 #include "Eigen/Core"
 
 typedef std::list<Eigen::Vector3d, Eigen::aligned_allocator<Eigen::Vector3d> > Vector3dList;
