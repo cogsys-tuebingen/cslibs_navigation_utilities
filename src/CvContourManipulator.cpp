@@ -7,6 +7,7 @@
 
 #include <cslibs_navigation_utilities/RamaxxException.h>
 #include <cslibs_navigation_utilities/CvContourManipulator.h>
+#include <opencv2/imgproc/imgproc_c.h>
 
 
 CvContourManipulator::CvContourManipulator()

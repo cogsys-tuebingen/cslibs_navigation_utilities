@@ -9,7 +9,7 @@
 #define CVCONTOURMANIPULATOR_H_
 
 #include <stddef.h>
-#include <opencv/cv.h>
+#include <opencv2/core/core_c.h>
 #include <string>
 #include <exception>
 
