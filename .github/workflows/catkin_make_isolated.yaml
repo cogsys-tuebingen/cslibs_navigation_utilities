@@ -1,0 +1,42 @@
+name: catkin_make_isolated
+
+on: [push]
+
+jobs:
+  build-18-melodic:
+    runs-on: [ubuntu-18.04]
+    strategy:
+      fail-fast: false
+      matrix:
+        compiler: ["-DCMAKE_C_COMPILER=gcc -DCMAKE_CXX_COMPILER=g++", "-DCMAKE_C_COMPILER=clang -DCMAKE_CXX_COMPILER=clang++"]
+    steps:
+    - uses: actions/checkout@v1
+    - uses: betwo/github-setup-catkin@v1.1.1
+      with:
+        ros-version: 'melodic'
+        workspace: '$GITHUB_WORKSPACE'
+    - name: build
+      run: |
+        sudo apt-get install -qq -y gcc clang
+        catkin_make_isolated ${{ matrix.compiler }}
+    - name: test
+      run: catkin_make_isolated --catkin-make-args run_tests
+
+  build-20-noetic:
+    runs-on: [ubuntu-20.04]
+    strategy:
+      fail-fast: false
+      matrix:
+        compiler: ["-DCMAKE_C_COMPILER=gcc -DCMAKE_CXX_COMPILER=g++", "-DCMAKE_C_COMPILER=clang -DCMAKE_CXX_COMPILER=clang++"]
+    steps:
+    - uses: actions/checkout@v1
+    - uses: betwo/github-setup-catkin@v1.1.1
+      with:
+        ros-version: 'noetic'
+        workspace: '$GITHUB_WORKSPACE'
+    - name: build
+      run: |
+        sudo apt-get install -qq -y gcc clang
+        catkin_make_isolated ${{ matrix.compiler }}
+    - name: test
+      run: catkin_make_isolated --catkin-make-args run_tests
