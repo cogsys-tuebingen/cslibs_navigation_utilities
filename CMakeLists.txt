@@ -4,27 +4,23 @@ project(cslibs_navigation_utilities)
 add_definitions(-W -Wall -Wno-unused-parameter -fno-strict-aliasing -Wno-unused-function -Wno-deprecated-register)
 
 find_package(catkin REQUIRED COMPONENTS tf)
-
-catkin_package(
-    INCLUDE_DIRS include
-    LIBRARIES ${PROJECT_NAME}
-    DEPENDS Eigen3 OpenCV
-)
-
-find_package(Boost COMPONENTS system filesystem REQUIRED)
-include_directories(SYSTEM ${Boost_INCLUDE_DIRS})
-
 find_package(Eigen3 REQUIRED)
-
 find_package(OpenCV REQUIRED)
+find_package(Boost COMPONENTS system filesystem REQUIRED)
 
-
-
+include_directories(SYSTEM ${Boost_INCLUDE_DIRS})
 include_directories(include)
 include_directories(SYSTEM
     ${EIGEN3_INCLUDE_DIR}
     ${catkin_INCLUDE_DIRS}
 )
+
+catkin_package(
+    INCLUDE_DIRS include
+    LIBRARIES ${PROJECT_NAME}
+    DEPENDS OpenCV
+)
+
 
 add_library (${PROJECT_NAME} SHARED
     src/CircleEstimator.cpp

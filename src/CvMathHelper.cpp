@@ -143,7 +143,7 @@ void CvMathHelper::generateRotationMatrix2D_(float angle, CvPoint2D64f center,
 
 CvMat* CvMathHelper::generateRotationMatrix2D_(float angle, CvPoint2D64f center) {
     CvMat* result= cvCreateMat(3, 3, CV_64FC1);
-    generateRotationMatrix2D_(angle, center);
+    generateRotationMatrix2D_(angle, center, result);
     return result;
 }
 
@@ -190,7 +190,7 @@ void CvMathHelper::generateRotationMatrix2D_(float angle, CvMat* matrix)
 
 CvMat* CvMathHelper::generateRotationMatrix2D_(float angle) {
     CvMat* result= cvCreateMat(3, 3, CV_64FC1);
-    generateRotationMatrix2D_(angle);
+    generateRotationMatrix2D_(angle, result);
     return result;
 }
 
@@ -233,7 +233,7 @@ void CvMathHelper::generateScaleMatrix2D_(double scaleX, double scaleY,
 
 CvMat* CvMathHelper::generateScaleMatrix2D_(double scaleX, double scaleY) {
     CvMat* result= cvCreateMat(3, 3, CV_64FC1);
-    generateScaleMatrix2D_(scaleX, scaleY);
+    generateScaleMatrix2D_(scaleX, scaleY, result);
     return result;
 }
 

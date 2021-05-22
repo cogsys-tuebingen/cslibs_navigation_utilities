@@ -18,7 +18,6 @@ using namespace std;
 // Vertical tab     VT  11  \v
 // Carriage return  CR  13  \r
 // Formfeed         FF  12  \f
-const int BUFFER_LEN=32768;
 const char * Strings::WHITE_SPACES_ALL = " \t\n\v\r\f";
 const char * Strings::WHITE_SPACES_DELIMITERS = " \t";
 
